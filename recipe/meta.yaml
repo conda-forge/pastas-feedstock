@@ -6,7 +6,7 @@ package:
   version: "{{ version }}"
 
 source:
-  url: https://github.com/pastas/{{ name }}/archive/{{ version }}.tar.gz
+  url: https://github.com/pastas/{{ name }}/archive/v{{ version }}.tar.gz
   sha256: 084cf16085dd42cc54d44df86dbd4e4c8b46d41965ce467819570c15fea58dcb
 
 build:
