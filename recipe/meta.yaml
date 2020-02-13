@@ -10,7 +10,7 @@ source:
   sha256: 872475032392d152e5c2d1c0a1b8ba262d16f49b3ebdafca33e49c477bff658b
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv "
 
@@ -20,7 +20,7 @@ requirements:
     - pip
     - python >=3.5
   run:
-    - matplotlib >=2.0
+    - matplotlib-base >=2.0
     - {{ pin_compatible('numpy') }}
     - pandas >=0.22
     - python >=3.5
