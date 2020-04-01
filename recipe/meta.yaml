@@ -1,18 +1,18 @@
 {% set name = "pastas" %}
-{% set version = "0.13.0" %}
+{% set version = "0.14.0" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
   url: https://github.com/pastas/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 872475032392d152e5c2d1c0a1b8ba262d16f49b3ebdafca33e49c477bff658b
+  sha256: 7672b2bf8f5cc29e990599b818305fdf12dddeefa37f20fad9140168fbfa0543
 
 build:
-  number: 1
+  number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv "
+  script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv '
 
 requirements:
   host:
