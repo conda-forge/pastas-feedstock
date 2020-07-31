@@ -1,5 +1,5 @@
 {% set name = "pastas" %}
-{% set version = "0.14.0" %}
+{% set version = "0.15.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/pastas/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 7672b2bf8f5cc29e990599b818305fdf12dddeefa37f20fad9140168fbfa0543
+  sha256: b4a3b504c1fec8df843371eeb5abf167879d24370de67679f3934b499fecf534
 
 build:
   number: 0
