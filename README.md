@@ -5,7 +5,7 @@ Home: https://github.com/pastas/pastas
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Python Applied System TimeSeries Analysis Software
 
