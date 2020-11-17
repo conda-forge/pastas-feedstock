@@ -5,11 +5,13 @@ Home: https://github.com/pastas/pastas
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pastas-feedstock/blob/master/LICENSE.txt)
 
 Summary: Python Applied System TimeSeries Analysis Software
 
+Development: https://github.com/pastas/pastas
 
+Documentation: http://pastas.readthedocs.io
 
 Current build status
 ====================
