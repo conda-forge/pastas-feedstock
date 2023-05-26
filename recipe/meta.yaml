@@ -1,13 +1,13 @@
 {% set name = "pastas" %}
-{% set version = "1.0.1" %}
+{% set version = "1.1.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://github.com/pastas/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 882f6ea1fa11f2f1eb64d7ec663f4e6c3f2ff22111f5bef21c2862448b595678
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: fa49a4999c2dd4179d87a6dbb17c723dedc919d1fd72924c0c7840cf1b2bfec5
 
 build:
   number: 0
@@ -27,13 +27,8 @@ requirements:
     - scipy >=1.0
 
 test:
-  requires:
-    - pytest
   imports:
     - pastas
-    - pastas.io
-    - pastas.read
-    - pastas.stats
 
 about:
   home: https://github.com/pastas/pastas
