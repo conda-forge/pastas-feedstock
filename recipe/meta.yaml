@@ -27,13 +27,8 @@ requirements:
     - scipy >=1.0
 
 test:
-  requires:
-    - pytest
   imports:
     - pastas
-    - pastas.io
-    - pastas.read
-    - pastas.stats
 
 about:
   home: https://github.com/pastas/pastas
