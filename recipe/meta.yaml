@@ -6,8 +6,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/pastas/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: afef9711b01bdfea0937cfb7b9a1c2ecd89ca06a63065860165e18f0ae241456
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: fa49a4999c2dd4179d87a6dbb17c723dedc919d1fd72924c0c7840cf1b2bfec5
 
 build:
   number: 0
