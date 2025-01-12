@@ -6,11 +6,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: faf3881c907dd0242edce19836b8185eb9408d99aeca68c0d032b576a58940d8
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv '
 
@@ -18,15 +18,17 @@ requirements:
   host:
     - numpy >=1.10
     - pip
-    - python >=3.5
+    - python {{ python_min }}
   run:
     - matplotlib-base >=2.0
     - {{ pin_compatible('numpy') }}
     - pandas >=0.22
-    - python >=3.5
+    - python >={{ python_min }}
     - scipy >=1.0
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - pastas
 
