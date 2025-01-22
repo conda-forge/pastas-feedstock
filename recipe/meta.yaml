@@ -10,7 +10,7 @@ source:
   sha256: 0cdca254e3f3212ac898d99225fd1f221566a0237ae61fada15d24ce0a174752
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv '
 
@@ -18,15 +18,17 @@ requirements:
   host:
     - numpy >=1.10
     - pip
-    - python >=3.5
+    - python {{ python_min }}
   run:
     - matplotlib-base >=2.0
     - {{ pin_compatible('numpy') }}
     - pandas >=0.22
-    - python >=3.5
+    - python >={{ python_min }}
     - scipy >=1.0
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - pastas
 
