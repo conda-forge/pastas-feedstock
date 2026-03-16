@@ -1,5 +1,5 @@
 {% set name = "pastas" %}
-{% set version = "1.8.0" %}
+{% set version = "1.9.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 0cdca254e3f3212ac898d99225fd1f221566a0237ae61fada15d24ce0a174752
+  sha256: ca209617d6c6c0b6b53600dbfe8dfae05224808a82375cb1892ac41aae5cb1ed
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv '
 
