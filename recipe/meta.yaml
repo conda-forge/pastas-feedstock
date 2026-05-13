@@ -20,11 +20,12 @@ requirements:
     - pip
     - python {{ python_min }}
   run:
-    - matplotlib-base >=2.0
+    - {{ pin_compatible('matplotlib') }}
     - {{ pin_compatible('numpy') }}
-    - pandas >=0.22
+    - {{ pin_compatible('pandas') }}
     - python >={{ python_min }}
-    - scipy >=1.0
+    - {{ pin_compatible('scipy') }}
+    - {{ pin_compatible('numba') }}
 
 test:
   requires:
