@@ -7,7 +7,7 @@ Home: https://github.com/pastas/pastas
 
 Package license: MIT
 
-Summary: Python Applied System TimeSeries Analysis Software
+Summary: Pastas is an open source python package for processing, simulating and analyzing groundwater time series. The object oriented structure allows for the quick implementation of new model components. Time series models can be created, calibrated, and analysed with just a few lines of python code with the built-in optimization, visualisation, and statistical analysis tools.
 
 Development: https://github.com/pastas/pastas
 
@@ -147,4 +147,5 @@ Feedstock Maintainers
 =====================
 
 * [@jentjr](https://github.com/jentjr/)
+* [@raoulcollenteur](https://github.com/raoulcollenteur)
 
